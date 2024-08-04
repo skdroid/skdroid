@@ -1,16 +1,14 @@
 import java.util.*;
+
 class GFG {
 
 	// Function to print all duplicate
 	// characters in string using HashMap
-	public static void
-	countDuplicateCharacters(String str)
-	{
+	public static void countDuplicateCharacters(String str) {
 
 		// Creating a HashMap containing char
 		// as a key and occurrences as a value
-		Map<Character, Integer> map
-			= new HashMap<Character, Integer>();
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
 
 		// Converting given string into
 		// a char array
@@ -26,8 +24,7 @@ class GFG {
 				// in map incrementing it's
 				// count by 1
 				map.put(c, map.get(c) + 1);
-			}
-			else {
+			} else {
 
 				// If character is not present
 				// in map putting this
@@ -41,31 +38,31 @@ class GFG {
 		// if the count of the character
 		// is greater than 1 then print
 		// the character and its frequency
-		for (Map.Entry<Character, Integer> entry :
-			map.entrySet()) {
+		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
 
 			if (entry.getValue() >= 122) {
 				System.out.println(entry.getKey()
-								+ " : "
-								+ entry.getValue());
+						+ " : "
+						+ entry.getValue());
+				System.out.println(entry.getKey()
+						+ " : "
+						+ entry.getValue());
 			}
 			if (entry.getValue() > 1) {
 				System.out.println(entry.getKey()
-								+ " : "
-								+ entry.getValue());
+						+ " : "
+						+ entry.getValue());
 			}
 			if (entry.getValue() > 2) {
 				System.out.println(entry.getKey()
-								+ " : "
-								+ entry.getValue());
+						+ " : "
+						+ entry.getValue());
 			}
 		}
 	}
 
 	// Driver Code
-	public static void
-	main(String args[])
-	{
+	public static void main(String args[]) {
 		// Given String str
 		String str = "geeksforgeeks";
 
