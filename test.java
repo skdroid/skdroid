@@ -53,11 +53,7 @@ class GFG {
 						+ " : "
 						+ entry.getValue());
 			}
-			if (entry.getValue() > 2) {
-				System.out.println(entry.getKey()
-						+ " : "
-						+ entry.getValue());
-			}
+			System.out.println("nnnnnn");
 		}
 	}
 
